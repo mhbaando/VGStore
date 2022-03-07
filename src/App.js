@@ -1,4 +1,3 @@
-import "./App.scss";
 import { Home } from "./Pages/index";
 const App = () => {
   return <Home />;
