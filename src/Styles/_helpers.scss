@@ -1,0 +1,86 @@
+/* 
+ * Classyo Caawimaad no ah
+ * Waxan ugu talo galnay in aan ku keydsano 
+ * propertieska so noq noqanaya 
+ * intii an soo celin lahyn hal class baan ku keydsanayo
+*/
+//* overfflow hide when the menu is open
+.overflow {
+  overflow: hidden;
+}
+
+//* Section & Containers
+.section {
+  padding: 0 54px;
+  @media screen and (max-width: 1440px) {
+    padding: 0 40px;
+  }
+  @media screen and(max-width:400px) {
+    padding: 0 20px;
+  }
+}
+.container {
+  max-width: 1 883px;
+  margin: 0 auto;
+  @media screen and (max-width: 1440px) {
+    max-width: 1440px;
+  }
+}
+
+.section-content {
+  padding: 0 100px;
+
+  @media screen and(max-width:540px) {
+    padding: 0 25px;
+  }
+  @media screen and(max-width:400px) {
+    padding: 0 15px;
+  }
+}
+
+.content-container {
+  max-width: 1630px;
+  margin: 0 auto;
+  @media screen and (max-width: 1440px) {
+    max-width: 1140px;
+  }
+}
+//* gradient color and bg Colors
+.gradient-color {
+  background: $tertiary-color;
+  background: linear-gradient(45deg, $tertiary-color 0%, $blue-color 100%);
+}
+
+// overlay background color
+.overlay-bg {
+  background: $white-color;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+// nav background
+.vg__navbg {
+  position: relative;
+  background-color: $secondary-color;
+  z-index: 3;
+}
+
+// subment bakground color
+.bg-submenu {
+  background-color: $secondary-color;
+  background-size: cover;
+  background-position: center center;
+}
+
+// header button
+.vg__addToCartBtn {
+  @include flex(space-betwean, center);
+  padding: 0.7rem 2rem;
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+  @include playfonts(17px, 500, $white-color);
+}

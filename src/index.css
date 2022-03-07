@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* * Macaluumaad Guud
+ * Magacag : VGstore Suuqa Online ka ah ee gaminka  
+ * Developer : Mohamud Abshir
+ * Linkiga Developerka : https://github.com/mhbaando/
+ * Designerka: Анастасия Нечаева - ANASTASI NECHAEVA
+ * Linkiga Designerka : https://www.behance.net/gallery/122886553/E-commerce-Game-Store
+ * Iga so follow gree : @mhbaando
+*/
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* * Shaxda Filasha SCSS
+ * waxaan heysana dhowr file o kala ah 
+   * _helpers => waxan ugu talo gakay propetieska css ee so noqnanaya
+   * _mixns => waa style 
+   * _general => waa stylka generalka ah sida bodyga stylka u ku qadanayo
+   * _normalizer => waxa uu ka baabinyaa borwserska wax wlba o style ah o define garaysna
+   *  main => waa stylka oo dhan mesha aa iskugu keenay
+ */
+
+/* * Farta
+ * Faraha aan isticmaalya waa OPEN SANS & PLAY 
+ * Open Sans waxan u isticmaalnay Farta qoraalka caadiga ah ee bodyga
+ * Play waxan u isticmaalnay Headings amd Moduucyada
+*/

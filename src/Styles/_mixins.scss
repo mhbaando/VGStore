@@ -1,0 +1,51 @@
+/* 
+ * Mixin waa function SCSS ay leedahay
+ * Waxan ugu talo galnay in aan ku keydsano 
+ * propertieska so noq noqanaya 
+ * intii an soo celin lahyn hal mix baan u aburynaa 
+ * wuxuu ka ag dhawyahy helper classes ki lkn isku si uma shaqyaan
+*/
+
+//* Flex Mixn
+@mixin flex-width($width) {
+  flex: $width;
+}
+
+@mixin flex($jcontent, $aitems, $fddirection: row) {
+  display: flex;
+  justify-content: $jcontent;
+  align-items: $aitems;
+  flex-direction: $fddirection;
+}
+
+//* fonts
+// main font
+@mixin playfonts($size, $weight, $color) {
+  font-family: $second-font;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+//* secondary font
+@mixin sansfonts($size, $weight, $color) {
+  font-family: $main-font;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+//* sacele hover
+@mixin hoverScale {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+//z-index
+@mixin zindex($index) {
+  z-index: $index;
+}
