@@ -1,7 +1,15 @@
-import React from "react";
+/*
+ * filknaa waxa uu masuu noga yahy in uu noo hayo icon userka ah
+ * si aan hadhow meel walba ugu isticmaali karno
+ */
 
+import images from "../../Assets/images";
 const User = () => {
-  return <div>User</div>;
+  return (
+    <div className="vg__user">
+      <img src={images.User} alt="User Profile Icon" />
+    </div>
+  );
 };
 
 export default User;

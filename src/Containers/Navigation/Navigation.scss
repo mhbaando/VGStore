@@ -1,0 +1,427 @@
+@import "variables";
+@import "mixins";
+/*
+ * 1. Nav holder
+ * 2. Brand/logo
+ * 3. Desktop Menu
+ * 4. Free game Button
+ * 5. Search Input
+ * 6. languages 
+ * 7. Search icon
+ * 8. User Icon
+ * 9. Favorite Icon
+ * 10. Cart Icon
+ * 11. Menu Icon
+ * 12. Mobile Menu
+ * 13. Desktop SubMenu
+ */
+/*******************
+* 1. Nav holder
+****************** */
+.vg__nav {
+  position: relative;
+  @include flex(space-between, center);
+  height: 70px;
+  @include zindex(5);
+}
+
+/*******************
+  * 2. Brand / logo
+  ****************** */
+.vg__brand {
+  @include flex(space-between, center);
+  margin-right: 20px;
+  width: 6.9375rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 380px) {
+    width: 100px;
+  }
+}
+
+/*******************
+  * 3. Desktop Menu
+  ****************** */
+.vg__Dlinks {
+  ul {
+    @include flex(space-between, center);
+
+    li {
+      position: relative;
+      transition: all 0.3s ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+
+      // waa claamada oo Hotnew korkeed ku taala
+      &:last-child {
+        &::before {
+          content: "";
+
+          position: absolute;
+          top: -50%;
+          right: -8%;
+          width: 8px;
+          height: 8px;
+
+          background-color: $tertiary-color;
+          border-radius: 50%;
+        }
+      }
+
+      // waa claamada menuga marki lo hover greyo so baxyso
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 0%;
+        height: 4px;
+        margin: 0 0 -0.8rem;
+
+        border-radius: 10px;
+        background-color: $tertiary-color;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      // farta ayaa halkan ka contorleysaa
+      a {
+        @include playfonts(16px, 500, $white-color);
+      }
+    }
+  }
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
+}
+
+/*******************
+  * 4. Free game Button
+  ****************** */
+.vg__navbutton {
+  @include playfonts(18px, bold, $tertiary-color);
+
+  cursor: pointer;
+  outline: none;
+  margin: 0 10px;
+  padding: 0.5rem 1.5rem;
+
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid $tertiary-color;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $tertiary-color;
+    color: $white-color;
+  }
+
+  @media screen and(max-width:1114px) {
+    display: none;
+  }
+}
+
+/*******************
+  * 5. Search Input
+  ****************** */
+.vg__search {
+  @include flex(space-between, center);
+
+  width: 300px;
+  position: relative;
+
+  input {
+    @include sansfonts(18px, 400, $secondary-color);
+
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+
+    padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+    background-color: $light-gray;
+
+    &:focus {
+      outline: 2px solid $tertiary-color;
+    }
+  }
+
+  // waa claamada searchda ah oo ku dhax taala inputrka
+  img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 15%;
+    right: 2%;
+  }
+
+  // shaa shadaha wa weyn kala bixi inputka
+  @media screen and (min-width: 1600px) {
+    width: 400px;
+  }
+  // markic cariir nqtana asga dhan meehsa kabixi
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+}
+
+/*******************
+  * 5. Languages
+  * 6. Search icon
+  * 7. User Icon
+  * 8. Farvorite icon
+  * 9. Cart Icon
+  ****************** */
+
+.vg__cta {
+  @include flex(flex-end, center);
+
+  // 5. Languages
+  .vg__languages {
+    @include flex(center, center, column);
+    position: relative;
+    width: 80px;
+
+    p {
+      @include sansfonts(16px, 400, $white-color);
+      cursor: pointer;
+    }
+
+    // dropdonwka so baxaya ee luqdaha noo haya
+    .vg__languages-list {
+      position: absolute;
+      top: 80%;
+      right: 0%;
+
+      width: 80px;
+      margin-top: 15px;
+      background-color: $secondary-color;
+
+      p {
+        @include flex(space-between, center, column);
+        @include sansfonts(16px, 400, $white-color);
+
+        width: 100%;
+        padding: 1rem 1rem;
+
+        &:hover {
+          background-color: $tertiary-color;
+        }
+      }
+    }
+
+    // mobile marki lagrana iska qari
+    @media screen and(max-width:550px) {
+      display: none;
+    }
+  }
+
+  // all icons search , user, favicon. cart
+  .vg__search-icon,
+  .vg__user,
+  .vg__favorite,
+  .vg__user,
+  .vg__cart {
+    @include flex(space-between, center);
+    @include hoverScale();
+
+    width: 25px;
+    height: 25px;
+
+    margin-left: 15px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    // shaashada mobilada aadka u yar yar
+    @media screen and (max-width: 350px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  // marki search input oo joogo asga dhan qari
+  .vg__search-icon {
+    @media screen and(min-width:1420px) {
+      display: none;
+    }
+  }
+}
+
+/*******************
+  * 12. Mobile Menu
+  ****************** */
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%; // maximum hight to make the cover all things
+  visibility: hidden;
+  cursor: pointer;
+
+  @include zindex(2);
+  // hide until desktop menus disappers
+  @media screen and(min-width:981px) {
+    display: none;
+  }
+}
+
+// iconka menuga
+.vg__menu-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  @include zindex(5);
+
+  svg {
+    width: 100%;
+    height: 100%;
+    color: $light-gray;
+
+    cursor: pointer;
+  }
+
+  // qari inta claamada menuga markaan desktop joogno
+  @media screen and(min-width:981px) {
+    display: none;
+  }
+  // cabirka iconka yaree si uu ula ekado kuwa kale maka lajoogo shaashadaha yar yar
+  @media screen and(max-width:350px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// waa menuga kaso baxya midga
+.vg__mobilemenu {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+
+  padding: 5rem 0;
+  height: 100%;
+  width: 310px;
+
+  transition: all 0.3s ease-in-out;
+  background-color: $secondary-color;
+  visibility: "hidden";
+
+  @include zindex(2);
+
+  ul {
+    @include flex(space-between, flex-start, column);
+    li {
+      width: 100%;
+      padding: 1.2rem 2rem;
+
+      a {
+        @include sansfonts(16px, 500, $white-color);
+        width: 100%;
+      }
+
+      &:nth-child(5) {
+        margin-bottom: 1rem;
+      }
+
+      &:hover {
+        background-color: $tertiary-color;
+      }
+    }
+  }
+
+  // asna qari hadi desktop lgaaro
+  @media screen and(min-width:981px) {
+    display: none;
+  }
+  // mobilkana marki lajoogo cabirkisa half kadhig
+  @media screen and(max-width:420px) {
+    width: 70%;
+  }
+}
+
+// wa buttonka ugu hoooseya listga mdiga
+.vg__navmobilebutton {
+  @include sansfonts(18px, 600, $secondary-color);
+
+  outline: 0;
+  width: 70%;
+  margin: 0 2rem 0;
+  border: none;
+
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $tertiary-color;
+    color: $white-color;
+  }
+}
+
+/*******************
+  * 13. Desktop Sub Menu
+  ****************** */
+.vg__submenus {
+  height: 50px;
+  position: relative;
+  @include flex(center, center);
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  ul {
+    @include flex(space-between, center);
+
+    li {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      a {
+        @include playfonts(16px, 500, $white-color);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $tertiary-color;
+        }
+      }
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 2px;
+
+        background-color: $tertiary-color;
+      }
+    }
+  }
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
+}

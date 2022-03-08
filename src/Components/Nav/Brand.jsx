@@ -3,8 +3,14 @@
  * si aan hadhow meel walba ugu isticmaali karno
  */
 
+import images from "../../Assets/images";
 const Brand = () => {
-  return <></>;
+  return (
+    // sawrka logada oo aan kaso impor gareenay images.js
+    <div className="vg__brand">
+      <img src={images.Logo} alt="VGStore Logo" />
+    </div>
+  );
 };
 
 export default Brand;
