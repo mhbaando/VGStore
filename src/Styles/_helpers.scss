@@ -6,7 +6,7 @@
 */
 //* overfflow hide when the menu is open
 .overflow {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 //* Section & Containers
@@ -20,14 +20,14 @@
   }
 }
 .container {
-  max-width: 1 883px;
+  max-width: 1883px;
   margin: 0 auto;
   @media screen and (max-width: 1440px) {
     max-width: 1440px;
   }
 }
 
-.section-content {
+.content-section {
   padding: 0 100px;
 
   @media screen and(max-width:540px) {
