@@ -1,0 +1,59 @@
+@import "variables", "mixins";
+.vg__category {
+  &-title {
+    @include flex(space-betwean, center);
+    @include playfonts(28px, 600, $white-color);
+    margin: 100px 0 50px;
+
+    div {
+      width: 6px;
+      height: 30px;
+
+      background-color: $tertiary-color;
+      margin-right: 15px;
+    }
+  }
+}
+
+// category items
+.vg__categoryItems {
+  @include flex(space-betwean, center);
+  flex-wrap: wrap;
+  width: 100%;
+  div {
+    @include flex(center, flex-end);
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    width: 340px;
+    height: 220px;
+    cursor: pointer;
+
+    border-radius: 7px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    @media screen and(max-width:650px) {
+      width: 47%;
+      margin-right: 10px;
+    }
+    &:nth-child(2) {
+      width: 65%;
+      margin-right: 0px;
+      @media screen and (max-width: 1250px) {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    h3 {
+      @include playfonts(18px, 600, $white-color);
+      position: relative;
+      top: -20px;
+    }
+  }
+}

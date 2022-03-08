@@ -6,11 +6,6 @@ const MainSlider = () => {
   // waxay contorlysaa data  kaso muqanysa sliderka weyn
   const [sliders, setSliders] = useState(Games[0]);
 
-  // animationka waxaan iskaleeh main sliderka
-  const mainSlider = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
-  };
   // animationkana waxa iskaleh minislider
   const varients = {
     hidden: { scale: 1.05, opacity: 0 },

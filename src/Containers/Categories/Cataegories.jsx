@@ -1,7 +1,12 @@
 import React from "react";
 import "./Categories.scss";
+import { Category } from "../../Components/index";
 const Cataegories = () => {
-  return <div>Cataegories</div>;
+  return (
+    <>
+      <Category />
+    </>
+  );
 };
 
 export default Cataegories;
