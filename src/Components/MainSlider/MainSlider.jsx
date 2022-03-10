@@ -48,11 +48,13 @@ const MainSlider = () => {
       <motion.div className="minSlider">
         {Games.map((game, index) => {
           return (
-            game !== sliders && (
+            game !== sliders &&
+            !game.isPopular && (
               <motion.div
                 key={index + game.title}
                 variants={varients}
                 initial="hidden"
+                whileHover={{ y: "-2%", opacity: 0.7 }}
                 animate="show"
                 exit="hidden"
                 transition={{ duration: 0.5, ease: "easeInOut" }}

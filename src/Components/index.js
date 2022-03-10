@@ -20,13 +20,20 @@ export { default as MobileMenu } from "./Nav/MobileMenu";
 export { default as MenuIcon } from "./Nav/MenuIcon";
 // navbar components hlkan by ku dhamaadan
 
+// slider export
 export { default as MainSlider } from "./MainSlider/MainSlider";
 
+// category export
 export { default as Category } from "./Category/Category";
+export { default as Title } from "./UI/Title";
+
+// popular export
+export { default as Popular } from "./Popular/Popular";
+export { default as PopularItems } from "./Popular/PopularItems";
+
 export { default as Footer } from "./Footer/Footer";
 export { default as Login } from "./Login/Login";
 export { default as News } from "./News/News";
-export { default as Popular } from "./Popular/Popular";
 export { default as Promotion } from "./Promotion/Promotion";
 export { default as Sale } from "./Sale/Sale";
 export { default as SignUp } from "./SignUp/SignUp";

@@ -4,7 +4,7 @@
  * kaa rbanna waan ka ragi karnaaa
  */
 
-import images from "../../Assets/images";
+import images from "../../Constants/images";
 const Search = () => {
   return (
     <div className="vg__search-icon">

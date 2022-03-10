@@ -4,7 +4,17 @@ import {
   medium,
   redDead,
   horizon,
-} from "../Assets/games/games";
+} from "../Constants/games";
+// popular images
+import {
+  Rainbow,
+  Jurassic,
+  Mortal,
+  Witcher,
+  Halo,
+  GTA,
+  RedDead,
+} from "../Constants/PopularImages";
 
 const Games = [
   {
@@ -64,6 +74,86 @@ const Games = [
     discountPercent: "",
     isOnSale: false,
     thmubnail: redDead,
+  },
+
+  // Populars
+  {
+    title: "Rainbow Six Siege",
+    desc: "Red Dead is a series of Western-themed action-adventure games published by Rockstar Games. The first entry in the series, Red Dead Revolver, was released on the PlayStation 2 and Xbox in May 2004. Originally developed by Capcom, Red Dead …",
+    price: "289.74",
+    category: "Action",
+    isPopular: true,
+    isDiscounted: false,
+    discountPercent: "",
+    isOnSale: false,
+    thmubnail: Rainbow,
+  },
+  {
+    title: "Jurassic World Evolution",
+    desc: "Red Dead is a series of Western-themed action-adventure games published by Rockstar Games. The first entry in the series, Red Dead Revolver, was released on the PlayStation 2 and Xbox in May 2004. Originally developed by Capcom, Red Dead …",
+    price: "219.99",
+    category: "Action",
+    isPopular: true,
+    isDiscounted: false,
+    discountPercent: "",
+    isOnSale: false,
+    thmubnail: Jurassic,
+  },
+  {
+    title: "Mortal Kombat X",
+    desc: "Red Dead is a series of Western-themed action-adventure games published by Rockstar Games. The first entry in the series, Red Dead Revolver, was released on the PlayStation 2 and Xbox in May 2004. Originally developed by Capcom, Red Dead …",
+    price: "349.75",
+    category: "Action",
+    isPopular: true,
+    isDiscounted: false,
+    discountPercent: "",
+    isOnSale: false,
+    thmubnail: Mortal,
+  },
+  {
+    title: "The Witcher",
+    desc: "Red Dead is a series of Western-themed action-adventure games published by Rockstar Games. The first entry in the series, Red Dead Revolver, was released on the PlayStation 2 and Xbox in May 2004. Originally developed by Capcom, Red Dead …",
+    price: "140.78",
+    category: "Action",
+    isPopular: true,
+    isDiscounted: false,
+    discountPercent: "",
+    isOnSale: false,
+    thmubnail: Witcher,
+  },
+
+  {
+    title: "Halo Reach",
+    desc: "Red Dead is a series of Western-themed action-adventure games published by Rockstar Games. The first entry in the series, Red Dead Revolver, was released on the PlayStation 2 and Xbox in May 2004. Originally developed by Capcom, Red Dead …",
+    price: "417.87",
+    category: "Action",
+    isPopular: true,
+    isDiscounted: false,
+    discountPercent: "",
+    isOnSale: false,
+    thmubnail: Halo,
+  },
+  {
+    title: "Grand Theft Aout",
+    desc: "Red Dead is a series of Western-themed action-adventure games published by Rockstar Games. The first entry in the series, Red Dead Revolver, was released on the PlayStation 2 and Xbox in May 2004. Originally developed by Capcom, Red Dead …",
+    price: "312.45",
+    category: "Action",
+    isPopular: true,
+    isDiscounted: false,
+    discountPercent: "",
+    isOnSale: false,
+    thmubnail: GTA,
+  },
+  {
+    title: "Red Dead",
+    desc: "Red Dead is a series of Western-themed action-adventure games published by Rockstar Games. The first entry in the series, Red Dead Revolver, was released on the PlayStation 2 and Xbox in May 2004. Originally developed by Capcom, Red Dead …",
+    price: "189.99",
+    category: "Action",
+    isPopular: true,
+    isDiscounted: false,
+    discountPercent: "",
+    isOnSale: false,
+    thmubnail: RedDead,
   },
 ];
 

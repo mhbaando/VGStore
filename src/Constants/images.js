@@ -3,11 +3,11 @@
  * hadhowna waxa u isticmaali dona as object
  * si aan u access greyno swirada
  */
-import Logo from "./VG Store logo.png";
-import Basket from "./basket.png";
-import Love from "./love.png";
-import Search from "./Search Icon.png";
-import User from "./User icon.png";
+import Logo from "../Assets/VG Store logo.png";
+import Basket from "../Assets/basket.png";
+import Love from "../Assets/love.png";
+import Search from "../Assets/Search Icon.png";
+import User from "../Assets/User icon.png";
 
 const images = {
   Logo,

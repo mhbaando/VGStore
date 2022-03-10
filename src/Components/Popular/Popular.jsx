@@ -1,7 +1,11 @@
 import React from "react";
-
+import PopularItems from "./PopularItems";
 const Popular = () => {
-  return <div>Popular</div>;
+  return (
+    <>
+      <PopularItems />
+    </>
+  );
 };
 
 export default Popular;

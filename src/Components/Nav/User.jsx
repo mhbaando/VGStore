@@ -3,7 +3,7 @@
  * si aan hadhow meel walba ugu isticmaali karno
  */
 
-import images from "../../Assets/images";
+import images from "../../Constants/images";
 const User = () => {
   return (
     <div className="vg__user">

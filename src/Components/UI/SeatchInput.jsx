@@ -1,4 +1,4 @@
-import images from "../../Assets/images";
+import images from "../../Constants/images";
 const SearchInput = (props) => {
   return (
     <div className={props.className}>

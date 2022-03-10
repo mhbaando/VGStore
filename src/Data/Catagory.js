@@ -1,7 +1,7 @@
 /**
  * filkaan waxa uu nohaya data cateogryga halkan lee kabadalynaa
  */
-import CategoryItems from "../Assets/Category/CategoryItems";
+import CategoryItems from "../Constants/CategoryItems";
 const CategoryData = [
   {
     title: "Straegy",
