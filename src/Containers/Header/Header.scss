@@ -67,6 +67,10 @@
   overflow-x: auto;
   -ms-overflow-style: none;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   width: 100%;
   cursor: pointer;
 

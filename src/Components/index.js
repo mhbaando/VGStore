@@ -29,7 +29,6 @@ export { default as Title } from "./UI/Title";
 
 // popular export
 export { default as Popular } from "./Popular/Popular";
-export { default as PopularItems } from "./Popular/PopularItems";
 
 export { default as Footer } from "./Footer/Footer";
 export { default as Login } from "./Login/Login";

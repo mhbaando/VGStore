@@ -1,6 +1,7 @@
 import React from "react";
-import { Popular, Title } from "../../Components/index";
 import "./Populars.scss";
+import Games from "../../Data/GameData";
+import { Popular, Title } from "../../Components/index";
 
 const Populars = () => {
   return (
@@ -14,7 +15,7 @@ const Populars = () => {
 
       {/* Popular Slider */}
       <div className="vg__populars">
-        <Popular />
+        <Popular Games={Games} />
       </div>
     </>
   );
