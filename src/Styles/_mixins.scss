@@ -49,3 +49,15 @@
 @mixin zindex($index) {
   z-index: $index;
 }
+
+// hide scroll
+@mixin hideScroll {
+  scrollbar-width: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

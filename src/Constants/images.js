@@ -37,6 +37,13 @@ import Elder from "../Assets/Promotions/elderscrolls.png";
 import CallofDuty from "../Assets/Promotions/CallofDuty.png";
 import Assasin from "../Assets/Promotions/assassincreed.png";
 
+// popular images
+import Borderland from "../Assets/onSale/borderlands.png";
+import Elite from "../Assets/onSale/Elite.png";
+import DarkSide from "../Assets/onSale/darkside.png";
+import shadow from "../Assets/onSale/shadow2.png";
+import Metro from "../Assets/onSale/Metrio.png";
+
 const images = {
   // navigation images
   Logo,
@@ -72,6 +79,13 @@ const images = {
   Elder,
   CallofDuty,
   Assasin,
+
+  // onsale
+  DarkSide,
+  Elite,
+  Borderland,
+  shadow,
+  Metro,
 };
 
 export default images;

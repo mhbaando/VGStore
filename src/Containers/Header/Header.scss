@@ -63,13 +63,7 @@
   position: relative;
 
   // scrolbarka ikska qari
-  scrollbar-width: none;
-  overflow-x: auto;
-  -ms-overflow-style: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  @include hideScroll();
 
   width: 100%;
   cursor: pointer;

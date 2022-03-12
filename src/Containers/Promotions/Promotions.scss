@@ -5,13 +5,8 @@
   @include flex(space-betwean, center);
   width: 100%;
 
-  // scroobarka qari
-  scrollbar-width: 0;
-  overflow-x: auto;
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  // scrolbarka ikska qari
+  @include hideScroll();
 
   // sawrada promotionska
   &-item {

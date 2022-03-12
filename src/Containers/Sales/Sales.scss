@@ -1,0 +1,9 @@
+@import "variables", "mixins";
+
+.vg__sale {
+  @include flex(space-betwean, flex-start);
+  width: 100%;
+
+  // scrolbarka ikska qari
+  @include hideScroll();
+}

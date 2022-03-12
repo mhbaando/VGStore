@@ -17,7 +17,7 @@ const Populars = () => {
       <div className="content-section ">
         <div className="content-container">
           <div className="vg__populars">
-            <Popular Games={Games} />
+            <Popular Games={Games} isfor="isPopular" />
           </div>
         </div>
       </div>

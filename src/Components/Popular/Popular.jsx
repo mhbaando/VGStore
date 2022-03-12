@@ -1,13 +1,15 @@
 import React from "react";
+import "./Popular.scss";
+
 import { Cart, Favorite } from "../index";
 import { motion } from "framer-motion";
 
-const Popular = ({ Games: Data }) => {
+const Popular = ({ Games, isfor }) => {
   return (
     <>
-      {Data.map((game, index) => {
+      {Games.map((game, index) => {
         return (
-          game.isPopular && (
+          game[isfor] && (
             <motion.div
               key={index + game.title}
               whileInView={{ opacity: [0, 1], y: ["10%", "0%"] }}
@@ -33,7 +35,10 @@ const Popular = ({ Games: Data }) => {
               <div className="vg__popular-info">
                 <div className="title">
                   <h3>{game.title}</h3>
-                  <h3>${game.price}</h3>
+                  <h3 className={isfor === "isOnSale" ? "isOnSale" : ""}>
+                    ${game.price}{" "}
+                    <span>{isfor === "isOnSale" && game.salePrice}</span>
+                  </h3>
                 </div>
 
                 {/* cart and favorite */}

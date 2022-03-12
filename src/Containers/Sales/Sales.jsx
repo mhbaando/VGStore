@@ -1,7 +1,9 @@
 import React from "react";
 import "./Sales.scss";
+import { Sale } from "../../Components/index";
+
 const Sales = () => {
-  return <div>Sales</div>;
+  return <Sale />;
 };
 
 export default Sales;
