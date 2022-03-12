@@ -1,0 +1,88 @@
+@import "variables", "mixins";
+.vg__homeNews {
+  @include flex(space-between, flex-start);
+  width: 100%;
+  @media screen and(max-width:750px) {
+    flex-direction: column !important;
+  }
+}
+
+// home news items
+.vg__homeNews-item {
+  @include flex(flex-end, flex-start, column);
+  flex-wrap: wrap;
+  position: relative;
+  height: 650px;
+  width: 49%;
+
+  cursor: pointer;
+  border-radius: 10px;
+  padding-bottom: 50px;
+
+  @media screen and(max-width:750px) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  // titleka iyo bodyga hoose
+  .info {
+    padding: 0 30px;
+    @include zindex(1);
+
+    h3 {
+      @include playfonts(20px, 600, $white-color);
+      margin-bottom: 15px;
+    }
+
+    p {
+      @include sansfonts(18px, 400, $white-color);
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // iconska hoose
+  .icon {
+    @include flex(center, center);
+    padding: 0 40px;
+    @include zindex(1);
+
+    svg {
+      color: $white-color;
+    }
+
+    span {
+      @include sansfonts(16px, 600, $white-color);
+      margin: 0 20px;
+    }
+
+    button {
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      width: 50px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+// waa midabka madowga ah ee kor ka saran
+.vg__homeNews-overlay {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+
+  @include zindex(0);
+  border-radius: 10px;
+  background: $tertiary-color;
+
+  background: linear-gradient(0deg, $black-color 0%, transparent 100%);
+}

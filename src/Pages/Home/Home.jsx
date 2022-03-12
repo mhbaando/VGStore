@@ -11,7 +11,7 @@ import {
   Populars,
   Promotions,
   Sales,
-  News,
+  HomeBlog,
   Subscribe,
   Footer,
 } from "../../Containers/index";
@@ -26,7 +26,7 @@ const Home = () => {
       <Populars />
       <Promotions />
       <Sales />
-      <News />
+      <HomeBlog />
       <Subscribe />
       <Footer />
     </>

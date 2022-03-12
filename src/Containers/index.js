@@ -9,7 +9,7 @@ export { default as Categories } from "./Categories/Cataegories";
 export { default as Footer } from "./Footer/Footer";
 export { default as Header } from "./Header/Header";
 export { default as Navigation } from "./Navigation/Navigation";
-export { default as News } from "./News/News";
+export { default as HomeBlog } from "./HomeBlog/HomeBlog";
 export { default as Populars } from "./Populars/Populars";
 export { default as Promotions } from "./Promotions/Promotions";
 export { default as Sales } from "./Sales/Sales";

@@ -8,6 +8,7 @@ import Basket from "../Assets/basket.png";
 import Love from "../Assets/love.png";
 import Search from "../Assets/Search Icon.png";
 import User from "../Assets/User icon.png";
+import Arrow from "../Assets/arrow.png";
 
 // Category Images
 import Sports from "../Assets/Category/Sports.png";
@@ -44,6 +45,10 @@ import DarkSide from "../Assets/onSale/darkside.png";
 import shadow from "../Assets/onSale/shadow2.png";
 import Metro from "../Assets/onSale/Metrio.png";
 
+// home news images
+import RocketLunch from "../Assets/news/RocketLeague.png";
+import Aeterna from "../Assets/news/Aterna.png";
+
 const images = {
   // navigation images
   Logo,
@@ -51,6 +56,7 @@ const images = {
   Love,
   Search,
   User,
+  Arrow,
 
   // slider images
   outrider,
@@ -86,6 +92,10 @@ const images = {
   Borderland,
   shadow,
   Metro,
+
+  // home news image
+  RocketLunch,
+  Aeterna,
 };
 
 export default images;
