@@ -1,5 +1,4 @@
 import React from "react";
-import "./Popular.scss";
 import { Cart, Favorite } from "../index";
 import { motion } from "framer-motion";
 
@@ -10,6 +9,7 @@ const Popular = ({ Games: Data }) => {
         return (
           game.isPopular && (
             <motion.div
+              key={index + game.title}
               whileInView={{ opacity: [0, 1], y: ["10%", "0%"] }}
               transition={{ duration: 0.5, delayChildren: 0.5 }}
               className="vg__popular"

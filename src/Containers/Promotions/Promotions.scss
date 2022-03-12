@@ -1,0 +1,56 @@
+@import "variables", "mixins";
+
+// pormotions item
+.vg__promotions {
+  @include flex(space-betwean, center);
+  width: 100%;
+
+  // scroobarka qari
+  scrollbar-width: 0;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  // sawrada promotionska
+  &-item {
+    // @include flex(flex-start, center);
+    cursor: pointer;
+    user-select: none;
+    margin-right: 20px;
+
+    img {
+      width: 380px;
+      height: 220px;
+      opacity: 0.5;
+
+      object-fit: cover;
+      object-position: center;
+
+      border-radius: 10px;
+
+      @media screen and(max-width:700px) {
+        width: 320px;
+        height: 150px;
+      }
+    }
+
+    &:nth-child(2) {
+      img {
+        width: 480px;
+        height: 250px;
+        opacity: 1;
+
+        @media screen and(max-width:1100px) {
+          width: 400px;
+          height: 250px;
+        }
+        @media screen and(max-width:700px) {
+          width: 300px;
+          height: 180px;
+        }
+      }
+    }
+  }
+}

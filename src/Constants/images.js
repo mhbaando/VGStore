@@ -9,11 +9,69 @@ import Love from "../Assets/love.png";
 import Search from "../Assets/Search Icon.png";
 import User from "../Assets/User icon.png";
 
+// Category Images
+import Sports from "../Assets/Category/Sports.png";
+import RPG from "../Assets/Category/RPG.png";
+import Shutter from "../Assets/Category/Shuter.png";
+import Simulator from "../Assets/Category/Simulator.png";
+import Strategy from "../Assets/Category/Strategy.png";
+
+// Popular images
+import GTA from "../Assets/Popular/GTA.png";
+import Halo from "../Assets/Popular/Halo.png";
+import Jurassic from "../Assets/Popular/Jurassic.png";
+import Mortal from "../Assets/Popular/Mortal.png";
+import Rainbow from "../Assets/Popular/Rainbow.png";
+import RedDead from "../Assets/Popular/RedDead.png";
+import Witcher from "../Assets/Popular/Witcher.png";
+
+// slider images
+import outrider from "../Assets/games/Hight Resolution/outrierds.png";
+import contorl from "../Assets/games/Hight Resolution/control.png";
+import medium from "../Assets/games/Hight Resolution/Medium.png";
+import redDead from "../Assets/games/Hight Resolution/redDead.png";
+import horizon from "../Assets/games/Hight Resolution/horizon.jpg";
+
+// promotion images
+import Elder from "../Assets/Promotions/elderscrolls.png";
+import CallofDuty from "../Assets/Promotions/CallofDuty.png";
+import Assasin from "../Assets/Promotions/assassincreed.png";
+
 const images = {
+  // navigation images
   Logo,
   Basket,
   Love,
   Search,
   User,
+
+  // slider images
+  outrider,
+  contorl,
+  medium,
+  redDead,
+  horizon,
+
+  // category images
+  Sports,
+  RPG,
+  Shutter,
+  Simulator,
+  Strategy,
+
+  //Popular Images
+  GTA,
+  Halo,
+  Jurassic,
+  Mortal,
+  Rainbow,
+  RedDead,
+  Witcher,
+
+  // promotion images
+  Elder,
+  CallofDuty,
+  Assasin,
 };
+
 export default images;

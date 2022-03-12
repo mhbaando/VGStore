@@ -1,32 +1,32 @@
 /**
  * filkaan waxa uu nohaya data cateogryga halkan lee kabadalynaa
  */
-import CategoryItems from "../Constants/CategoryItems";
+import images from "../Constants/images";
 const CategoryData = [
   {
     title: "Straegy",
     url: "#",
-    imgURL: CategoryItems.Strategy,
+    imgURL: images.Strategy,
   },
   {
     title: "Sports",
     url: "#",
-    imgURL: CategoryItems.Sports,
+    imgURL: images.Sports,
   },
   {
     title: "RPG",
     url: "#",
-    imgURL: CategoryItems.RPG,
+    imgURL: images.RPG,
   },
   {
     title: "Shuter",
     url: "#",
-    imgURL: CategoryItems.Shutter,
+    imgURL: images.Shutter,
   },
   {
     title: "Simulator",
     url: "#",
-    imgURL: CategoryItems.Simulator,
+    imgURL: images.Simulator,
   },
 ];
 

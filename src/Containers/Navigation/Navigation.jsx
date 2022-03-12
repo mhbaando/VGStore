@@ -4,7 +4,7 @@
  * halkaan baan ku render greneynaa
  */
 
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { MenuIsOpen } from "../../Context/menu-context";
 import { SubMenuOpen } from "../../Context/subMenu-context";
 import {

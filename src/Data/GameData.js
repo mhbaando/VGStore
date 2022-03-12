@@ -1,20 +1,4 @@
-import {
-  outrider,
-  contorl,
-  medium,
-  redDead,
-  horizon,
-} from "../Constants/games";
-// popular images
-import {
-  Rainbow,
-  Jurassic,
-  Mortal,
-  Witcher,
-  Halo,
-  GTA,
-  RedDead,
-} from "../Constants/PopularImages";
+import images from "../Constants/images";
 
 const Games = [
   {
@@ -26,7 +10,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: outrider,
+    thmubnail: images.outrider,
   },
 
   {
@@ -38,7 +22,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: contorl,
+    thmubnail: images.contorl,
   },
 
   {
@@ -50,7 +34,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: horizon,
+    thmubnail: images.horizon,
   },
 
   {
@@ -62,7 +46,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: medium,
+    thmubnail: images.medium,
   },
   {
     title: "Red Dead",
@@ -73,7 +57,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: redDead,
+    thmubnail: images.redDead,
   },
 
   // Populars
@@ -86,7 +70,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: Rainbow,
+    thmubnail: images.Rainbow,
   },
   {
     title: "Jurassic World Evolution",
@@ -97,7 +81,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: Jurassic,
+    thmubnail: images.Jurassic,
   },
   {
     title: "Mortal Kombat X",
@@ -108,7 +92,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: Mortal,
+    thmubnail: images.Mortal,
   },
   {
     title: "The Witcher",
@@ -119,7 +103,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: Witcher,
+    thmubnail: images.Witcher,
   },
 
   {
@@ -131,7 +115,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: Halo,
+    thmubnail: images.Halo,
   },
   {
     title: "Grand Theft Aout",
@@ -142,7 +126,7 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: GTA,
+    thmubnail: images.GTA,
   },
   {
     title: "Red Dead",
@@ -153,7 +137,42 @@ const Games = [
     isDiscounted: false,
     discountPercent: "",
     isOnSale: false,
-    thmubnail: RedDead,
+    thmubnail: images.RedDead,
+  },
+
+  // Promotions 40%
+  {
+    title: "assassin creed valhalla",
+    desc: "Unlike some of the previous Assassin's Creed titles, Valhalla has a much more centralized story following Evior's journey from Norway to England, and seeking to build out a new home for their viking clan by forming alliances ...",
+    price: "199.99",
+    category: "Horror",
+    isPopular: false,
+    isDiscounted: true,
+    discountPercent: "40",
+    isOnSale: false,
+    thmubnail: images.Assasin,
+  },
+  {
+    title: "Call of Duty",
+    desc: "Call of Duty is a first-person shooter video game franchise published by Activision. Starting out in 2003, it first focused on games set in World War II. Over time, the series has seen games set in the midst of the Cold War...",
+    price: "159.99",
+    category: "Horror",
+    isPopular: false,
+    isDiscounted: true,
+    discountPercent: "40",
+    isOnSale: false,
+    thmubnail: images.CallofDuty,
+  },
+  {
+    title: "The Elder Scrolls",
+    desc: "The Elder Scrolls is a series of action role-playing video games primarily developed by Bethesda Game Studios and published by Bethesda Softworks. The series focuses on free-form gameplay in a detailed open world. ",
+    price: "99.99",
+    category: "Horror",
+    isPopular: false,
+    isDiscounted: true,
+    discountPercent: "40",
+    isOnSale: false,
+    thmubnail: images.Elder,
   },
 ];
 

@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import Games from "../../Data/GameData";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "../index";
 const MainSlider = () => {
   // waxay contorlysaa data  kaso muqanysa sliderka weyn
   const [sliders, setSliders] = useState(Games[0]);
-
   // animationkana waxa iskaleh minislider
   const varients = {
     hidden: { scale: 1.05, opacity: 0 },
     show: { scale: 1, opacity: 1 },
   };
+
+  //TODO: Remove the inline style and change it to actual imge element
 
   // halkna ina waxa kabadsho uma baahnid
   return (

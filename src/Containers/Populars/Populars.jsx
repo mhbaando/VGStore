@@ -14,8 +14,12 @@ const Populars = () => {
       </div>
 
       {/* Popular Slider */}
-      <div className="vg__populars">
-        <Popular Games={Games} />
+      <div className="content-section ">
+        <div className="content-container">
+          <div className="vg__populars">
+            <Popular Games={Games} />
+          </div>
+        </div>
       </div>
     </>
   );

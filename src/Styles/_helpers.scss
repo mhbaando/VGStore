@@ -29,7 +29,7 @@
 
 .content-section {
   padding: 0 100px;
-
+  height: 100%;
   @media screen and(max-width:540px) {
     padding: 0 25px;
   }
@@ -41,6 +41,7 @@
 .content-container {
   max-width: 1630px;
   margin: 0 auto;
+  height: 100%;
   @media screen and (max-width: 1440px) {
     max-width: 1140px;
   }
