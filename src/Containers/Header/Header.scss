@@ -4,16 +4,24 @@
 .vg__mainslider {
   width: 100%;
   height: 600px;
+  position: relative;
 
-  // shaahadaha waa weyn
-  @media screen and(min-width: 1540px) {
-    height: 80vh;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, $black-color 0%, transparent 100%);
   }
 
-  // cinwaanka
   h3 {
     @include playfonts(55px, 600, $white-color);
-    padding-top: 145px;
+    position: relative;
+    z-index: 1;
     @media screen and(max-width:680px) {
       padding-top: 80px;
     }
@@ -28,7 +36,8 @@
     margin: 25px 0;
     line-height: 31px;
     width: 500px;
-
+    position: relative;
+    z-index: 1;
     @media screen and (max-width: 680px) {
       width: 100%;
     }
@@ -57,9 +66,13 @@
   }
 }
 
+.flex {
+  @include flex(center, flex-start, column);
+}
+
 // sliderka yarka oo ladoor dooran karo
 .minSlider {
-  @include flex(space-betwean, center);
+  @include flex(flex-start, center);
   position: relative;
 
   // scrolbarka ikska qari

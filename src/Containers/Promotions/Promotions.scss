@@ -2,9 +2,11 @@
 
 // pormotions item
 .vg__promotions {
-  @include flex(space-betwean, center);
+  @include flex(center, center);
   width: 100%;
-
+  @media screen and(max-width:1100px) {
+    justify-content: space-between;
+  }
   // scrolbarka ikska qari
   @include hideScroll();
 

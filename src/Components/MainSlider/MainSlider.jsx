@@ -26,9 +26,8 @@ const MainSlider = () => {
         }}
       >
         {/* waxa uu dhaxda nooga hynaa xogtena markaan shaashad weyn ku furtid */}
-
         <div className="content-section">
-          <div className="content-container">
+          <div className="content-container flex">
             {/* xogta halkaan bay ka bilaabanysaaa */}
             <motion.h3>
               {sliders.title} <span>- ${sliders.price}</span>
@@ -50,7 +49,7 @@ const MainSlider = () => {
         {Games.map((game, index) => {
           return (
             game !== sliders &&
-            !game.isPopular && (
+            game.isForSlider && (
               <motion.div
                 key={index + game.title}
                 variants={varients}
