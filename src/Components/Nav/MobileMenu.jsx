@@ -6,8 +6,8 @@
 
 import { useContext, useState } from "react";
 import { MenuIsOpen } from "../../Context/menu-context";
-import MenuItems from "./MenuItems";
-import SubMenuItems from "./SubMenuItems.js";
+import { MenuItems } from "../../Data/index";
+import { SubMenuItems } from "../../Data/index";
 import { motion, AnimatePresence } from "framer-motion";
 
 const MobileMenu = () => {

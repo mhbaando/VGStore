@@ -3,7 +3,7 @@
  * Kuwaas oo ku hoos jira Menu Element
  */
 import React, { useContext } from "react";
-import SubMenuItems from "./SubMenuItems";
+import { SubMenuItems } from "../../Data/index";
 import { SubMenuOpen } from "../../Context/subMenu-context";
 import { motion, AnimatePresence } from "framer-motion";
 

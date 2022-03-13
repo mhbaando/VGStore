@@ -4,7 +4,7 @@
  * kasoo ka dhaxeya mobile menu iyo deskto menu
  */
 import { useContext } from "react";
-import MenuItems from "./MenuItems.js";
+import { MenuItems } from "../../Data/index";
 import { SubMenuOpen } from "../../Context/subMenu-context";
 
 const DesktopLinks = () => {
