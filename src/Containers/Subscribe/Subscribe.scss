@@ -1,0 +1,64 @@
+@import "variables", "mixins";
+
+.vg__subscribeNews {
+  @include flex(center, center, column);
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+  @media screen and (max-width: 650px) {
+    margin: 100px 0;
+  }
+
+  h3 {
+    @include playfonts(22px, 500, $tertiary-color);
+    text-transform: uppercase;
+  }
+
+  h4 {
+    @include playfonts(20px, 400, $white-color);
+    margin: 17px 0;
+  }
+
+  div {
+    @include flex(center, center);
+
+    input {
+      width: 380px;
+      border: 0;
+      outline: none;
+
+      letter-spacing: 2px;
+      padding: 0.7rem 0.5rem;
+      background-color: $light-gray;
+
+      @include sansfonts(16px, 500, $gray);
+
+      &::placeholder {
+        @include sansfonts(16px, 500, $gray);
+        opacity: 1;
+      }
+
+      @media screen and(max-width:650px) {
+        width: 280px;
+      }
+    }
+
+    .line {
+      height: 35px;
+      width: 2px;
+      background-color: $primary-color;
+    }
+
+    button {
+      border: 0;
+      outline: none;
+
+      cursor: pointer;
+      padding: 0.7rem 1rem;
+      background-color: $light-gray;
+
+      @include sansfonts(16px, 500, $gray);
+    }
+  }
+}
