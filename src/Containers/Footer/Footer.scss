@@ -1,0 +1,115 @@
+@import "variables", "mixins";
+
+// footer ka halkaan buu ka bilaabanyaa
+.vg__footer {
+  width: 100%;
+  padding-top: 100px;
+  @include flex(center, center, column);
+}
+
+.vg__footer-info {
+  width: 100%;
+
+  @include flex(space-between, center);
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+  }
+}
+// footer logo
+.vg__footer-brand {
+  width: 20%;
+  @include flex(space-between, center);
+  margin-right: 50px;
+  img {
+    width: 111px;
+    height: auto;
+  }
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-right: 0px;
+  }
+  .upButton {
+    width: 50px;
+    @media screen and(min-width:851px) {
+      display: none;
+    }
+  }
+}
+// dhamaan linkyada dhaxda kujra oo dahn
+.vg__links {
+  width: 65%;
+  @include flex(flex-start, flex-start);
+  flex-wrap: wrap;
+
+  // dhamaantoda waxa ay common ka yihiin
+  &-burchase,
+  &-information,
+  &-contacts {
+    flex: 1;
+    flex-basis: auto;
+
+    height: 100%;
+    @include flex(center, flex-start, column);
+
+    h3 {
+      @include playfonts(19px, 500, $white-color);
+      margin-bottom: 20px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: 0%;
+        width: 100%;
+        height: 2px;
+        background-color: $tertiary-color;
+      }
+    }
+
+    a,
+    p {
+      @include sansfonts(14px, 400, $white-color);
+      transition: all 0.3s ease-in-out;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    a:hover {
+      color: $tertiary-color;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+
+  &-contacts {
+    @media screen and (max-width: 850px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+// buttonka ugu danbeya oo kor aadaya
+.vg__upArrow {
+  width: 15%;
+  @include flex(flex-end, center);
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+}
+
+// copy right section
+
+.vg__footer-copyright {
+  margin: 50px 0 30px;
+  p {
+    @include playfonts(16px, 400, $white-color);
+  }
+}

@@ -49,6 +49,21 @@ import Metro from "../Assets/onSale/Metrio.png";
 import RocketLunch from "../Assets/news/RocketLeague.png";
 import Aeterna from "../Assets/news/Aterna.png";
 
+// payment icons
+import Visa from "../Assets/Payments/visa.png";
+import MasterCard from "../Assets/Payments/mastercard.png";
+import Paypal from "../Assets/Payments/paypal.png";
+
+// social icons
+import Facebook from "../Assets/Social icons/fb.png";
+import Instagram from "../Assets/Social icons/inst.png";
+import Twitter from "../Assets/Social icons/twiter.png";
+import Youtube from "../Assets/Social icons/youtube.png";
+import Steam from "../Assets/Social icons/steam.png";
+
+// back button  on footer
+import BackButton from "../Assets/back-button.png";
+
 const images = {
   // navigation images
   Logo,
@@ -96,6 +111,21 @@ const images = {
   // home news image
   RocketLunch,
   Aeterna,
+
+  // payemnts images
+  Visa,
+  MasterCard,
+  Paypal,
+
+  // scoial icons
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+  Steam,
+
+  // back button
+  BackButton,
 };
 
 export default images;
