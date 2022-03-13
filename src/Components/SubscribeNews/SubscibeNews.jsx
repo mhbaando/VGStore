@@ -1,25 +1,23 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const SubscibeNews = () => {
-  const [submited, setIsSubmitted] = useState("");
   return (
-    <div className="vg__subscribeNews">
+    <motion.div
+      whileInView={{ opacity: [0, 1], y: ["10%", "0%"] }}
+      transition={{ duration: 0.5, delayChildren: 0.5 }}
+      className="vg__subscribeNews"
+    >
       <h3>Subscribe For Our Newsletter</h3>
       <h4>Stay Up To Date With Us</h4>
       <div>
-        <input type="email" placeholder="e-mail" />
-        <div className="line"></div>
-        <button
-          type="submit"
-          onClick={(e) => {
-            e.preventDefault();
-            setIsSubmitted("");
-          }}
-        >
-          Send
-        </button>
+        <form action="#">
+          <input type="email" placeholder="e-mail" />
+          <div className="line"></div>
+          <button type="submit">Send</button>
+        </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

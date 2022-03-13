@@ -21,44 +21,54 @@
   }
 
   div {
-    @include flex(center, center);
+    form {
+      @include flex(center, center);
+      input {
+        width: 380px;
+        border: 0;
+        outline: none;
 
-    input {
-      width: 380px;
-      border: 0;
-      outline: none;
+        letter-spacing: 2px;
+        padding: 0.7rem 0.5rem;
+        background-color: $light-gray;
 
-      letter-spacing: 2px;
-      padding: 0.7rem 0.5rem;
-      background-color: $light-gray;
-
-      @include sansfonts(16px, 500, $gray);
-
-      &::placeholder {
         @include sansfonts(16px, 500, $gray);
-        opacity: 1;
+
+        &::placeholder {
+          @include sansfonts(16px, 500, $gray);
+          opacity: 1;
+        }
+
+        @media screen and(max-width:650px) {
+          width: 280px;
+        }
+        &:focus {
+          outline: 0.5px solid $tertiary-color;
+        }
       }
 
-      @media screen and(max-width:650px) {
-        width: 280px;
+      .line {
+        height: 35px;
+        width: 2px;
+        background-color: $primary-color;
       }
-    }
 
-    .line {
-      height: 35px;
-      width: 2px;
-      background-color: $primary-color;
-    }
+      button {
+        border: 0;
+        outline: none;
 
-    button {
-      border: 0;
-      outline: none;
+        cursor: pointer;
+        padding: 0.7rem 1rem;
+        background-color: $light-gray;
 
-      cursor: pointer;
-      padding: 0.7rem 1rem;
-      background-color: $light-gray;
+        transition: all 0.3s ease-in-out;
+        @include sansfonts(16px, 500, $gray);
 
-      @include sansfonts(16px, 500, $gray);
+        &:hover {
+          background-color: $tertiary-color;
+          color: $primary-color;
+        }
+      }
     }
   }
 }
