@@ -1,0 +1,23 @@
+@import "variables", "mixins";
+.vg__title {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.vg__page-title {
+  @include flex(flex-start, center);
+  margin-top: 15px;
+  p {
+    a {
+      @include sansfonts(14px, 400, $gray);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $tertiary-color;
+      }
+    }
+  }
+  img {
+    width: 50px;
+    margin: 8px 10px 0;
+  }
+}

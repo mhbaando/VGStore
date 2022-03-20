@@ -1,6 +1,12 @@
-import { Home } from "./Pages/index";
+import { Home, About } from "./Pages/index";
 const App = () => {
-  return <Home />;
+  return (
+    // for development purpose before installing React Router
+    <>
+      {/* <Home /> */}
+      <About />
+    </>
+  );
 };
 
 export default App;

@@ -1,5 +1,6 @@
 {
   "name": "vgstore",
+  "homepage": "https://mhbaando.com/vgstore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

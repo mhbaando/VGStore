@@ -1,0 +1,22 @@
+@import "variables", "mixins";
+
+// titleka section walba
+.vg__title {
+  @include flex(space-betwean, center);
+  @include playfonts(28px, 600, $white-color);
+  margin: 100px 0 50px;
+
+  div {
+    width: 6px;
+    height: 30px;
+
+    background-color: $tertiary-color;
+    margin-right: 15px;
+  }
+
+  h3 {
+    span {
+      color: $tertiary-color;
+    }
+  }
+}

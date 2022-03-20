@@ -24,7 +24,7 @@ export { default as MenuIcon } from "./Nav/MenuIcon";
 export { default as MainSlider } from "./MainSlider/MainSlider";
 
 // category export
-export { default as Title } from "./UI/Title";
+export { default as Title } from "./SectionTitle/SectionTitle";
 export { default as Category } from "./Category/Category";
 
 // popular,promotion,sales,news, subscibe,footer export
@@ -37,3 +37,6 @@ export { default as FooterComponent } from "./FooterComponent/FooterComponent";
 
 export { default as Login } from "./Login/Login";
 export { default as SignUp } from "./SignUp/SignUp";
+
+// All page title
+export { default as PageTitle } from "./PageTitle/PageTitle";

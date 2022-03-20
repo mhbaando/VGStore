@@ -23,7 +23,7 @@ through the link below and give her an appretiation
 
 - Clone or Download this project
 - Make sure `node` Is installed on your computer
-- Open Terminal with in the folder and type `node install` to install all
+- Open Terminal with in the folder and type `npm install` to install all
   dependecies
 - type `npm run start` to run the application on a local host
 

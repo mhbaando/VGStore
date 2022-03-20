@@ -1,0 +1,60 @@
+@import "variables", "mixins";
+.vg__about-header {
+  @include flex(flex-start, flex-start, column);
+  width: 100%;
+  height: 80vh;
+}
+
+.vg__about-info {
+  @include flex(center, center, column);
+  width: 100%;
+  height: 100%;
+
+  h1 {
+    @include playfonts(180px, 600, $tertiary-color);
+    text-transform: uppercase;
+    margin: 0;
+
+    // dhalooyinka waa weyn
+    @media screen and (min-width: 1550px) {
+      font-size: 220px;
+    }
+    // dhalooyinka yar yar
+    @media screen and (max-width: 1100px) {
+      font-size: 140px;
+    }
+
+    @media screen and (max-width: 890px) {
+      font-size: 110px;
+    }
+
+    @media screen and (max-width: 750px) {
+      font-size: 80px;
+    }
+    @media screen and (max-width: 650px) {
+      font-size: 60px;
+    }
+  }
+  p {
+    @include sansfonts(26px, 400, $white-color);
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+    margin-top: -20px;
+
+    @media screen and (max-width: 1100px) {
+      font-size: 16px;
+      letter-spacing: 0.9rem;
+      margin-top: -10px;
+    }
+    @media screen and (max-width: 890px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 750px) {
+      letter-spacing: 0.5rem;
+    }
+    @media screen and (max-width: 650px) {
+      letter-spacing: 0.2rem;
+      margin-top: 0;
+    }
+  }
+}

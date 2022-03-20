@@ -46,6 +46,7 @@
     max-width: 1140px;
   }
 }
+
 //* gradient color and bg Colors
 .gradient-color {
   background: $tertiary-color;
@@ -87,28 +88,19 @@
   @include playfonts(17px, 500, $white-color);
 }
 
-// titleka section walba
-.vg__title {
-  @include flex(space-betwean, center);
-  @include playfonts(28px, 600, $white-color);
-  margin: 100px 0 50px;
-
-  div {
-    width: 6px;
-    height: 30px;
-
-    background-color: $tertiary-color;
-    margin-right: 15px;
-  }
-
-  h3 {
-    span {
-      color: $tertiary-color;
-    }
-  }
-}
-
 // farta colorkeeda badal hadii on sales lajoogo
 .isOnSale {
   color: $tertiary-color !important;
+}
+
+// about background image
+.about__bg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), $primary-color),
+    linear-gradient(to left, rgba(0, 0, 0, 0.2) 85%, $primary-color),
+    linear-gradient(to right, rgba(0, 0, 0, 0.2) 75%, $primary-color),
+    url("../Assets/About/aboutCover.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
