@@ -3,7 +3,7 @@ import { PageTitle } from "../../Components/index";
 import "./AboutHeader.scss";
 const AboutHeader = () => {
   return (
-    <div className="about__bg">
+    <div className="about__header-bg ">
       <div className="content-section ">
         <div className="content-container">
           <div className="vg__about-header">

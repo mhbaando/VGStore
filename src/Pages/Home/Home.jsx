@@ -19,7 +19,7 @@ import {
 // hlkan buu ka bilabnyaa
 const Home = () => {
   return (
-    <>
+    <div className="home__bg">
       <Navigation />
       <Header />
       <Categories />
@@ -29,7 +29,7 @@ const Home = () => {
       <HomeBlog />
       <Subscribe />
       <Footer />
-    </>
+    </div>
   );
 };
 
